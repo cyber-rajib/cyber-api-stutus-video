@@ -10,7 +10,7 @@ const statusesData = JSON.parse(fs.readFileSync('status.json'));
 app.get('/status', (req, res) => {
   const randomIndex = Math.floor(Math.random() * statusesData.length);
   const randomStatus = statusesData[randomIndex];
-  const author = "Islamick Cyber Chat";
+  const author = "𝐈𝐒𝐋𝐀𝐌𝐈𝐂𝐊 𝐂𝐘𝐁𝐄𝐑 𝐂𝐇𝐀𝐓";
   const responseData = {
     author,
     url: {
@@ -25,4 +25,4 @@ app.get('/status', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
-}); 
+});
